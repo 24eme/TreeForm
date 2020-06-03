@@ -1,6 +1,42 @@
+body,html{
+    width:100%;
+    height:100%;
+    margin:auto;
+    font-size: O.8rem;
+    background-color:#eeeeee;
+  
+  }
 
 
+.quizz .one {
+    width: 50%;
+    height:auto;
+    background-color:#533434;
+    margin:auto ;
+   
 
+}
 
+.quizz .two{
+    width: 50%;
+    height:auto;
+    background-color:#533434;
+    margin:auto ;
 
+}
 
+.quizz .three{
+    width: 50%;
+    height:auto;
+    background-color: #533434;
+    margin:auto ;
+
+}
+
+.quizz .response{
+    margin: 5px;
+}
+
+.quizz{
+    margin-bottom: 30px;
+}
