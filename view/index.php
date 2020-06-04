@@ -12,13 +12,15 @@
 <body>
   <div class="header"><h1>TreeForm<h1></div>
 <div class="container">
-  <div class="content headline">
+  <div class="content left_content">
+    <div class="headline">
     <p>Creer votre formulaire simplement</p>
     <p>Creer votre sondage</p>
     <p>Participer,échanger avec votre communauté</p>
+    </div>
   </div>
   <div class=" content login_content">
-  <form action="login.php" method="post">
+  <form action="authentification.php" method="post">
     <div class="username_container">
       <input type="text" class="form-control" placeholder="Pseudo ou Email">
     </div>

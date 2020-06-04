@@ -15,11 +15,10 @@
     <div class="create_container">
       <form class="form" method="POST" action="form.php">
           <div class="box_container">
-            <label>Question : </label>
+          <label>Question : </label>
           <input class="question" name="question" type="text" placeholder="Veuillez saisir la question"  required><br>
                   <label>Réponse : </label>
                   <input class="response" name="reponse" type="text" placeholder="Veuillez saisir la(les) réponse(s) possible(s)"  ><br>
-                  <input class="response" name="reponse" type="text" placeholder="Veuillez saisir la(les) réponse(s) possible(s)" ><br>
                   <div class="more more_response"><a href="" onclick="addResponse()"><img src="img/add.png"/><span>Ajouter une reponse</span></a></div>
 
           <hr>
