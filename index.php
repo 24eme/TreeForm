@@ -26,7 +26,7 @@
       <input type="text" class="form-control" placeholder="Pseudo ou Email">
     </div>
     <div class="password_container">
-      <input type="text" placeholder="Mot de passe">
+      <input type="password" placeholder="Mot de passe">
     </div>
     <div class="btn_container">
           <button type="submit" class="btn btn_login" name="btnlogin">Se connecter</button>
