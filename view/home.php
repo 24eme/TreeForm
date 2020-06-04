@@ -13,12 +13,14 @@
   <div class="header"><h1>TreeForm<h1></div>
 <div class="container">
     <div class="create_container">
-      <form class="form" method="POST" action="form.php">
+      <form id="form" class="form" method="POST" action="form.php">
           <div class="box_container">
           <label>Question : </label>
           <input class="question" name="question" type="text" placeholder="Veuillez saisir la question"  required><br>
                   <label>Réponse : </label>
+                  <div id='response_container'>
                   <input class="response" name="reponse" type="text" placeholder="Veuillez saisir la(les) réponse(s) possible(s)"  ><br>
+                </div>
                   <div class="more more_response"><a href="" onclick="addResponse()"><img src="img/add.png"/><span>Ajouter une reponse</span></a></div>
 
           <hr>

@@ -1,3 +1,6 @@
+
+<?php require_once('../model/connexion.php');
+?>
 <!DOCTYPE html>
 <html>
 
@@ -11,24 +14,25 @@
 
 <body>
   <div class="header"><h1>TreeForm<h1></div>
-<div class="container">
-  <div class="content headline">
+    <div class="container">
+      <div class="content left_content">
+        <div class="headline">
     <p>Creer votre formulaire simplement</p>
     <p>Creer votre sondage</p>
     <p>Participer,échanger avec votre communauté</p>
   </div>
-  <div class=" content login_content">
-  <form action="authentification.php" method="post">
+  </div>
+  <div  class=" content login_content">
+  <form action="../../controller/save.php" method="post">
     <div class="username_container">
-      <input type="text" class="form-control" placeholder="Pseudo">
-      <input type="text" class="form-control" placeholder="email@exemple.com">
+      <input type="text" class="form-control" placeholder="Pseudo"name="pseudo" required>
+      <input type="text" class="form-control" placeholder="email@exemple.com"name="email" required>
     </div>
     <div class="password_container">
-      <input type="text" placeholder="Mot de passe">
-      <input type="text" placeholder="Confirmation de mot de passe">
+      <input type="text" placeholder="Mot de passe" name="password" required>
+      <input type="text" placeholder="Confirmation de mot de passe"name="cpassword" required>
     </div>
     <div class="btn_container">
-          <button type="submit" class="btn btn_login" name="btnlogin">Se connecter</button>
           <button type="submit" class="btn btn_signup" name="btnsignup">S'inscrire</button>
     </div>
   </form>

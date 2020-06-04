@@ -1,11 +1,12 @@
+<?php require_once('model/connexion.php'); ?>
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <link type="text/css" rel="stylesheet" href="view/css/main.css" />
   <link rel="shortcut icon" href="img/favicon.png" />
-  <script src="js/script.js"></script>
+  <script src="view/js/script.js"></script>
     <title>TreeForm</title>
 </head>
 
@@ -20,7 +21,7 @@
     </div>
   </div>
   <div class=" content login_content">
-  <form action="authentification.php" method="post">
+  <form action="authentification.php" method="post">  <!--àfairepourconnexion-->
     <div class="username_container">
       <input type="text" class="form-control" placeholder="Pseudo ou Email">
     </div>
@@ -29,7 +30,8 @@
     </div>
     <div class="btn_container">
           <button type="submit" class="btn btn_login" name="btnlogin">Se connecter</button>
-          <button type="submit" class="btn btn_signup" name="btnsignup">S'inscrire</button>
+          <button formaction="view/signup.php"type="submit" class="btn btn_signup" name="btnsignup">S'inscrire</button>
+
     </div>
   </form>
   </div>
