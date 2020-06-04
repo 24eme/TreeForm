@@ -3,8 +3,8 @@
 function OpenCo() {
 
 $host = "localhost";
-$user = "root";
-$password = ;
+$user = "treeform";
+$password = "treeform123" ;
 $database = "treeform";
 
 $co = (new mysqli($host,$user,$password,$database)
