@@ -1,129 +1,128 @@
 body,html{
   width:100%;
-  height:100%;
-  margin:auto;
-  font-size: 1.3em;
-  background-color:#eeeeee;
-
+  margin:0;
+  overflow-y: hidden;
 }
 
 *{
-  font-family: Tahoma;
-  /* font-size: 1.5em; */
+font-family: QuickSand Medium;
 }
-
-.header{
-  height: 20px;
-  width:100%;
-}
-
-.container{
-  /* background-image:url(../img/fond.jpg); */
-  /* background-repeat:no-repeat; */
-  height: 100%;
-  width:100%;
-  margin:0;
-}
-
 h1{
-  font-size: 40px;
-  font-weight: normal;
-  font-style: italic;
-  font-family: Open Tahoma;
+  font-size: 2em;
+  color: #fcbe03;
   margin-left: 40px;
+  letter-spacing: 10px;
 }
-
 
 h2{
   margin-top:30px;
-}
-
-.seconnecter{
-  text-align: center;
-  color:grey;
-  padding-top:200px;
-}
-
-.identifiant{
-  padding-bottom:10px;
-
-}
-
-.pseudo{
-
-}
-
-input{
-  border-bottom-color:#b2d2bf;
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  text-align: center;
-  font-size: 1.2em;
-  background-color: inherit;
-}
-
-.valider input{
-  margin-top: 60px;
-  background-color:#93a99c;
-  width:auto;
-  height:auto;
-  border-radius: 5px;
-
-}
-.s-inscrire input{
-  background-color:#93a99c;
-  width:auto;
-  height:auto;
-  border-radius: 5px;
-}
-.mot-de-passe{
-  margin-top:  10px;
 }
 
 h4{
   margin: 0;
   padding: 5px;
 }
+a{
+  color: black;
+  text-decoration: none;
+}
 
-.sinscrire input{
-  margin-top: 60px;
-  background-color:#93a99c;
-  width:auto;
-  height:auto;
-  border-radius: 5px;
+.header{
+  position: absolute;
+  margin: 10px;
+  width: 300px;
 }
 
 
+.container{
+  width:100%;
+  height: 100%;
+  margin:0;
+}
 
-@media screen and (max-width:680px){
-   .valider{
-    margin: auto ;
-    width: 95%;
-  }
+.content{
+  float: left;
+  width: 50%;
+  height: 800px;
+}
+.headline{
+  float: left;
+  padding-top: 200px;
+  background-image: url('../img/back_content.jpg');
+  background-size: cover;
+}
+.headline p{
+  color: white;
+  font-family: QuickSand;
+  font-size: 1.8em;
+}
+.login_content{
+  text-align: center;
+  color:grey;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.login_content form{
+  margin: auto;
+  padding-top: 200px;
+  padding-bottom: 0;
+}
+.username_container{
+  padding-bottom:10px;
 
-  .s-inscrire{
-    margin: auto ;
-    width: 95%;
-  }
+}
+form input[type="text"]{
+  margin: 10px;
+  border: none;
+  border-bottom: 1px solid #b2d2bf;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: inherit;
+}
 
-  .container input {
-    /* backgrond-image:url(../img/fond.jpg); */
-    /* background-repeat:no-repeat; */
-    height: 100%;
-    width:100%;
-    margin:0;
-  }
-
-  .mot-de-passe{
-    margin-bottom: 40px;
-  }
-
-  body{
-    overflow: hidden;
-    font-size: 1em;
-  }
-
-
-
+.btn_container{
+  width: 400px;
+  margin: auto;
+  margin-top:50px;
+  display: block;
+}
+.btn{
+  display: inline-block;
+  font-size: 1em;
+  padding: 10px;
+  margin:20px;
+  width: 150px;
+  border:none;
+  border-radius: 5px;
+  background: linear-gradient(to right, black 50%, #93a99c 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+.btn:hover{
+ background-position: left bottom;
+}
+.mot-de-passe{
+  margin-top:  10px;
+}
+.create_container{
+  width: 80%;
+  margin: auto;
+  color: white;
+  text-align: center;
+  padding: 100px;
+  background-color:#533434;
+}
+.response{
+  margin: 5px;
+}
+.more{
+  width: 300px;
+}
+.more img{
+  vertical-align: middle;
+  width: 50px;
+  height:50px;
+}
+.more_response{
+  margin: auto;
 }

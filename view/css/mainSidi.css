@@ -4,20 +4,20 @@ body,html{
     margin:auto;
     font-size: O.8rem;
     background-color:#eeeeee;
-  
+
   }
 
 
-.quizz .one {
+.box_container .one {
     width: 50%;
     height:auto;
     background-color:#533434;
     margin:auto ;
-   
+
 
 }
 
-.quizz .two{
+.box_container .two{
     width: 50%;
     height:auto;
     background-color:#533434;
