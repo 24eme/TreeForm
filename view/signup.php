@@ -1,5 +1,6 @@
 
 <?php require_once('../model/connexion.php');
+// require_once('../controller/save.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,14 +24,14 @@
   </div>
   </div>
   <div  class=" content login_content">
-  <form action="../../controller/save.php" method="post">
+  <form action="../controller/save.php" method="post">
     <div class="username_container">
       <input type="text" class="form-control" placeholder="Pseudo"name="pseudo" required>
-      <input type="text" class="form-control" placeholder="email@exemple.com"name="email" required>
+      <input type="email" class="form-control" placeholder="email@exemple.com"name="email" required>
     </div>
     <div class="password_container">
-      <input type="text" placeholder="Mot de passe" name="password" required>
-      <input type="text" placeholder="Confirmation de mot de passe"name="cpassword" required>
+      <input type="password" placeholder="Mot de passe" name="password" required>
+      <input type="password" placeholder="Confirmation de mot de passe"name="cpassword" required>
     </div>
     <div class="btn_container">
           <button type="submit" class="btn btn_signup" name="btnsignup">S'inscrire</button>
