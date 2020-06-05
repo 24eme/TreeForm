@@ -1,3 +1,4 @@
+
 <?php
 require_once("../model/connexion.php");
 
@@ -6,15 +7,34 @@ $email=$_POST["email"];
 $password=$_POST["password"];
 $cpassword=$_POST["cpassword"];
 
+
+$stmt= $bd->prepare('SELECT * FROM Users WHERE email=?');
+$stmt->execute([$email]);
+$user=$stmt->fetch();
+
+
+
+
+if(mb_strlen($pseudo)<3){
+  header('location:../view/signup.php'); //"Pseudo trop court"
+
+}
+
+if (! filter_var($email, FILTER_VALIDATE_EMAIL)){
+  header('location:../view/signup.php');
+}
+
+if(mb_strlen($password)<6){
+  header('location:../view/signup.php');
+    }
+
 if($password != $cpassword){
     header('location:../view/signup.php');
-    echo("Veuillez saisir un mot de passe identique");
+    //echo("Veuillez saisir un mot de passe identique");
 }
-elseif("SELECT * from Users where email=.$email."){
-    if(mysqli_num_rows()!=0){
-      header('location:../view/signup.php');
-      echo("Cette adresse mail est déjà utilisée");
-    }
+if($user){
+  header('location:../view/signup.php'); //email existe déjà
+
 }
 else{
   $ps=$bd->prepare("INSERT INTO Users(pseudo,email,password)VALUES(?,?,?)");

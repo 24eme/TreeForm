@@ -1,4 +1,4 @@
-<?php require_once('model/connexion.php'); ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -21,12 +21,12 @@
     </div>
   </div>
   <div class=" content login_content">
-  <form action="authentification.php" method="post">  <!--àfairepourconnexion-->
+  <form action="controller/access.php" method="post">  <!--àfairepourconnexion-->
     <div class="username_container">
-      <input type="text" class="form-control" placeholder="Pseudo ou Email">
+      <input type="text" class="form-control" name="email" placeholder="Pseudo ou Email">
     </div>
     <div class="password_container">
-      <input type="password" placeholder="Mot de passe">
+      <input type="password" name="password" placeholder="Mot de passe">
     </div>
     <div class="btn_container">
           <button type="submit" class="btn btn_login" name="btnlogin">Se connecter</button>
