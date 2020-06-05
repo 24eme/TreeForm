@@ -9,7 +9,7 @@ font-family: QuickSand Medium;
 }
 h1{
   font-size: 2em;
-  color: #fcbe03;
+  color: #FCBE03;
   margin-left: 40px;
   letter-spacing: 10px;
 }
@@ -124,7 +124,7 @@ a{
   margin:20px;
   border:none;
   border-radius: 5px;
-  background: linear-gradient(to right, black 50%, #93a99c 50%);
+  background: linear-gradient(to right, #FCBE03 50%, #93a99c 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all .5s ease-out;
@@ -141,11 +141,11 @@ a{
 .create_container{
   width: 80%;
   margin: auto;
-  color: white;
+  color: #57B5AC;
   text-align: center;
   padding: 5%;
   padding-top: 100px;
-  background-color:#533434;
+  background-color:rgba(245, 245, 245,1);
 }
 .question{
   width: 50%;
