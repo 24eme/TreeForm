@@ -7,7 +7,7 @@ function addResponse(div){
     input.className = 'response';
     input.type = "text";
     input.placeholder = "Veuillez saisir la(les) réponse(s) possible(s)";
-    input.name = "response";
+    input.name = "response[]";
   // Retrouver le formulaire qui va le contenir
     var container = document.getElementById(div);
   // ajoute au formulaire, la div crée
@@ -52,18 +52,18 @@ function addQuestion(){
       response.className = "response";
       response.type = "text";
       response.placeholder = "Veuillez saisir la(les) réponse(s) possible(s)";
-      response.name = "response";
+      response.name = "response[]";
 
       //CLonage des deux autres réponses
       responseC1.className = "response"
       responseC1.type = "text";
       responseC1.placeholder = "Veuillez saisir la(les) réponse(s) possible(s)";
-      responseC1.name = "response";
+      responseC1.name = "response[]";
 
       responseC2.className = "response";
       responseC2.type = "text";
       responseC2.placeholder = "Veuillez saisir la(les) réponse(s) possible(s)";
-      responseC2.name = "response";
+      responseC2.name = "response[]";
 
 
     //Ajout du btn Ajouter une reponse
@@ -92,7 +92,7 @@ function addQuestion(){
 
     divR.appendChild(responseC2);
     divR.appendChild(brC2);
-    
+
     divR.appendChild(divMore);
 
     var trait = document.createElement("hr");
@@ -103,7 +103,7 @@ function addQuestion(){
     question.className = "question";
     question.type = "text";
     question.placeholder = "Veuillez saisir la question";
-    question.name = "question";
+    question.name = "question[]";
 
 
     var formulaire = document.getElementById("form");
@@ -118,3 +118,12 @@ function addQuestion(){
     global_container.appendChild(box_container);
 
 }
+
+ //Exporter sous fichier Export
+  function Export(){
+
+    var conf = confirm("Export users to CSV?");
+
+    if(conf == true){
+      window.open("export.php", '_blank');}
+  }
